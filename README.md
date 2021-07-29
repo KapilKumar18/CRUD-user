@@ -7,7 +7,7 @@ Run the below command in cmd prompt -
 4) npm start
 
 What's inside -
-1) Initially it lands to home page where you can see a list of users. In begining there could not be any thing to display except "No Data Found" as there is no user.
+1) Initially it lands to home page where you can see a list of users. In begining there will be any user detail to display if you are visiting for first time except "No Data Found" as there is no user.
 
 2) To add new user you can click on add contact button. This will take you to addcontact page where you can give input and add user click on Add button. The time you click on Add  button assuming entered input field are filled it will add user and direct you to home page where you can see latest user on top of list. These detail be stored in localstorage.
 
