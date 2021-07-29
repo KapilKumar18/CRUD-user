@@ -36,7 +36,7 @@ const App = () => {
     setSearchItem(searchvalue)
     if(searchvalue !== ""){
        const newSearchList = contacts.filter((contact) => {
-        return Object.values(contact).join(" ").includes(searchvalue);
+        return Object.values(contact).join(" ").toLowerCase().includes(searchvalue.toLowerCase());
      })
      setSearchContacts(newSearchList)
     }
