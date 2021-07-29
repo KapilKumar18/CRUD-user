@@ -1,0 +1,61 @@
+.fa-trash, .fa-edit{
+    opacity: 0.5;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: lightgrey;
+    transition: all 0.2s;
+}
+
+.fa-trash{
+    color: red;
+    padding: 8px 10px;
+}
+
+.fa-edit{
+    color: blue;
+    padding: 9px;
+}
+
+.fa-edit:hover,
+.fa-trash:hover{
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+.search{
+    position: relative;
+}
+
+.fa-search{
+    position: absolute;
+    right: 10px;
+    top: 50%;    
+    transform: translate(-50%, -50%);
+    z-index: 999;
+}
+
+.link{
+    color: black;
+}
+
+.link:hover{
+    color: gray;
+    text-decoration: none;
+}
+
+.fa-arrow-left{
+    color: grey;
+    font-size: 20px;
+    padding: 8px 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: lightgrey;
+    transition: all 0.2s;
+}
+
+.fa-arrow-left:hover{
+    color: black;
+    padding: 8px 10px;
+    background-color: grey;
+}
