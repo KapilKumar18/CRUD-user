@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Link } from "react-router-dom";
 import ContactCard from './ContactCard';
 
@@ -8,9 +8,15 @@ const ContactList = (props) => {
     props.deleteContactHandler(id);
   }
 
+  const search = useRef("");
+
   const renderContactList =  props.contacts.map((item) => {
     return <ContactCard key={item.id} item={item} getIdHandler={getId} />
-  })    
+  })   
+  
+  const getSearchItem = () => {
+    props.searchContactHandler(search.current.value)
+  }
 
 return(
   <div className="container py-4">
@@ -20,7 +26,7 @@ return(
     </div>
 
     <div className="search">
-      <input type="text" placeholder="Search here....." className="w-100 my-4 p-2"/>
+      <input type="text" placeholder="Search Name/Email/ID....." ref={search} value={props.searchItem} className="w-100 my-4 p-2" onChange={ getSearchItem } />
       <i className="fa fa-search" ></i>
     </div>
       {
