@@ -13,7 +13,7 @@ const App = () => {
   const [ contacts, setContacts ] = useState([]);
 
   const addContact = (contact) => {
-    setContacts([...contacts, { id: uuid() , ...contact }])
+    setContacts([{ id: uuid() , ...contact }, ...contacts])
   }
 
   const deleteContact = (id) => {
